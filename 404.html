@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — CronKode</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--orange:#f97316;--dark:#111111;--mid:#9ca3af;--subtle:#e5e7eb;--bg:#fafaf9}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--dark);-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+nav{padding:0 40px;display:flex;align-items:center;height:56px;border-bottom:1px solid var(--subtle);background:#fff}
+.nav-logo{display:flex;align-items:center;gap:9px;text-decoration:none}
+.lm{width:26px;height:26px;background:var(--orange);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;color:#fff}
+.lw{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:var(--dark);letter-spacing:-0.01em}
+main{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 24px;text-align:center}
+.inner{max-width:480px}
+.code{font-family:'Space Grotesk',sans-serif;font-size:96px;font-weight:700;color:var(--orange);line-height:1;letter-spacing:-4px;margin-bottom:24px;opacity:0.15}
+h1{font-family:'Space Grotesk',sans-serif;font-size:28px;font-weight:700;color:var(--dark);letter-spacing:-0.02em;margin-bottom:12px}
+p{font-size:15px;color:var(--mid);line-height:1.65;font-weight:300;margin-bottom:32px}
+.btn-fill{background:var(--orange);color:#fff;padding:11px 22px;border-radius:8px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:14px;text-decoration:none;transition:background .12s;display:inline-flex;align-items:center;gap:6px}
+.btn-fill:hover{background:#ea6a0a}
+.btn-outline{background:transparent;color:var(--dark);padding:11px 22px;border-radius:8px;font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:14px;text-decoration:none;border:1px solid var(--subtle);transition:border-color .12s;display:inline-flex;align-items:center;gap:6px}
+.btn-outline:hover{border-color:#d1d5db}
+.actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+footer{padding:24px 40px;border-top:1px solid var(--subtle);text-align:center;font-size:12px;color:var(--mid)}
+@media(max-width:480px){nav{padding:0 16px}.code{font-size:64px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="lm">C</div>
+    <div class="lw">CronKode</div>
+  </a>
+</nav>
+
+<main>
+  <div class="inner">
+    <div class="code">404</div>
+    <h1>Nothing here.</h1>
+    <p>This page doesn't exist — or it moved. Either way, what you're looking for is probably back on the homepage.</p>
+    <div class="actions">
+      <a href="/" class="btn-fill">Back to home</a>
+      <a href="https://fibreops.co.za" target="_blank" class="btn-outline">See FibreOps</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 2026 CronKode (Pty) Ltd · Johannesburg, South Africa
+</footer>
+
+</body>
+</html>
