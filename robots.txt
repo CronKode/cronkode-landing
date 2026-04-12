@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cronkode.co.za/sitemap.xml
