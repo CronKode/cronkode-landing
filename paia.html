@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAIA Manual — CronKode</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--orange:#f97316;--dark:#111111;--mid:#6b7280;--subtle:#e5e7eb;--bg:#fafaf9;--white:#ffffff}
+body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--dark);-webkit-font-smoothing:antialiased}
+nav{padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:56px;border-bottom:1px solid var(--subtle);background:var(--white);position:sticky;top:0;z-index:10}
+.nav-logo{display:flex;align-items:center;gap:9px;text-decoration:none}
+.lm{width:26px;height:26px;background:var(--orange);border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13px;color:#fff}
+.lw{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:15px;color:var(--dark);letter-spacing:-0.01em}
+.nav-back{font-size:13px;color:var(--mid);text-decoration:none;transition:color .12s}
+.nav-back:hover{color:var(--dark)}
+main{max-width:720px;margin:0 auto;padding:64px 24px 96px}
+.doc-label{font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--orange);margin-bottom:12px}
+.doc-title{font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:700;color:var(--dark);letter-spacing:-0.02em;margin-bottom:12px}
+.doc-meta{font-size:13px;color:var(--mid);margin-bottom:48px;padding-bottom:32px;border-bottom:1px solid var(--subtle)}
+h2{font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:600;color:var(--dark);margin:40px 0 12px;letter-spacing:-0.01em}
+h3{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:600;color:var(--dark);margin:24px 0 8px}
+p{font-size:15px;color:#374151;line-height:1.8;margin-bottom:14px}
+ul{margin:0 0 14px 20px}
+ul li{font-size:15px;color:#374151;line-height:1.8;margin-bottom:6px}
+table{width:100%;border-collapse:collapse;margin-bottom:24px}
+table th{background:var(--dark);color:white;padding:10px 14px;font-size:13px;font-weight:600;text-align:left;font-family:'Space Grotesk',sans-serif}
+table td{padding:12px 14px;font-size:13px;color:#374151;border-bottom:1px solid var(--subtle)}
+table tr:hover td{background:var(--bg)}
+a{color:var(--orange);text-decoration:none}
+a:hover{text-decoration:underline}
+.highlight{background:var(--bg);border-left:3px solid var(--orange);border-radius:0 8px 8px 0;padding:16px 20px;margin:24px 0}
+.highlight p{margin:0;font-size:14px}
+footer{border-top:1px solid var(--subtle);padding:24px 40px;text-align:center;font-size:12px;color:var(--mid)}
+@media(max-width:600px){nav{padding:0 16px}main{padding:40px 20px 64px}.doc-title{font-size:28px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="lm">C</div>
+    <div class="lw">CronKode</div>
+  </a>
+  <a href="/" class="nav-back">← Back to home</a>
+</nav>
+
+<main>
+  <div class="doc-label">Legal</div>
+  <h1 class="doc-title">PAIA Manual</h1>
+  <div class="doc-meta">
+    Promotion of Access to Information Act 2 of 2000<br>
+    Last updated: April 2026 · Version 1.0<br>
+    CronKode (Pty) Ltd — Private Body
+  </div>
+
+  <div class="highlight">
+    <p>This manual is published in terms of Section 51 of the Promotion of Access to Information Act 2 of 2000 (PAIA). It describes the records held by CronKode (Pty) Ltd and how members of the public may request access to those records.</p>
+  </div>
+
+  <h2>1. Introduction</h2>
+  <p>The Promotion of Access to Information Act 2 of 2000 (PAIA) gives effect to the constitutional right of access to information held by both public and private bodies. CronKode (Pty) Ltd is committed to transparency and to facilitating access to information in accordance with PAIA and the Protection of Personal Information Act 4 of 2013 (POPIA).</p>
+  <p>This manual serves as a guide to the records held by CronKode (Pty) Ltd and the procedures for requesting access to such records.</p>
+
+  <h2>2. Contact Details of the Organisation</h2>
+  <table>
+    <tr><th>Detail</th><th>Information</th></tr>
+    <tr><td>Organisation name</td><td>CronKode (Pty) Ltd</td></tr>
+    <tr><td>Registration type</td><td>Private Company</td></tr>
+    <tr><td>Physical address</td><td>Johannesburg, Gauteng, South Africa</td></tr>
+    <tr><td>Postal address</td><td>Johannesburg, Gauteng, South Africa</td></tr>
+    <tr><td>Email address</td><td><a href="mailto:hello@cronkode.co.za">hello@cronkode.co.za</a></td></tr>
+    <tr><td>Website</td><td><a href="https://cronkode.co.za">cronkode.co.za</a></td></tr>
+  </table>
+
+  <h2>3. Information Officer</h2>
+  <p>The Information Officer is responsible for ensuring compliance with PAIA and POPIA and for processing requests for access to records.</p>
+  <table>
+    <tr><th>Detail</th><th>Information</th></tr>
+    <tr><td>Full name</td><td>Refiloe Seutloali</td></tr>
+    <tr><td>Capacity</td><td>Chief Executive Officer / Founder</td></tr>
+    <tr><td>Email address</td><td><a href="mailto:hello@cronkode.co.za">hello@cronkode.co.za</a></td></tr>
+    <tr><td>Organisation</td><td>CronKode (Pty) Ltd</td></tr>
+  </table>
+
+  <h2>4. Records Available Without a Formal Request</h2>
+  <p>The following records are publicly available without submitting a formal PAIA request:</p>
+  <ul>
+    <li>This PAIA Manual — available at cronkode.co.za/paia</li>
+    <li>Privacy Policy — available at cronkode.co.za/privacy</li>
+    <li>Terms of Service — available at cronkode.co.za/terms</li>
+    <li>Product information and pricing — available at cronkode.co.za and fibreops.co.za</li>
+  </ul>
+
+  <h2>5. Records Held by CronKode (Pty) Ltd</h2>
+  <p>CronKode (Pty) Ltd holds the following categories of records:</p>
+
+  <h3>5.1 Corporate and Legal Records</h3>
+  <ul>
+    <li>CIPC registration documents</li>
+    <li>Company incorporation documents</li>
+    <li>Banking records</li>
+    <li>Tax records and correspondence with SARS</li>
+    <li>Contracts and agreements with clients and suppliers</li>
+  </ul>
+
+  <h3>5.2 Client and Operational Records</h3>
+  <ul>
+    <li>Client onboarding information</li>
+    <li>Subscription and billing records</li>
+    <li>Support correspondence</li>
+    <li>Service agreements and quotes</li>
+  </ul>
+
+  <h3>5.3 Personal Information Records</h3>
+  <ul>
+    <li>Contact details of clients and enquiries</li>
+    <li>User account information on FibreOps platform</li>
+    <li>Field technician records (held on behalf of ISP clients)</li>
+    <li>Email correspondence</li>
+  </ul>
+
+  <h3>5.4 Technical and Product Records</h3>
+  <ul>
+    <li>Source code and product documentation</li>
+    <li>System architecture and infrastructure records</li>
+    <li>Security and access control records</li>
+  </ul>
+
+  <h2>6. How to Request Access to Records</h2>
+  <p>Any person wishing to request access to records held by CronKode (Pty) Ltd must submit a written request to the Information Officer. The request must be submitted using Form C as prescribed under PAIA, or a substantially similar written request containing the following information:</p>
+  <ul>
+    <li>Full name and contact details of the requester</li>
+    <li>Description of the record requested</li>
+    <li>The form in which access is required (copy, inspection, etc.)</li>
+    <li>Reason for the request (where applicable)</li>
+    <li>Proof of identity</li>
+  </ul>
+  <p>Requests must be submitted to: <a href="mailto:hello@cronkode.co.za">hello@cronkode.co.za</a></p>
+
+  <h2>7. Processing of Requests</h2>
+  <table>
+    <tr><th>Step</th><th>Timeframe</th></tr>
+    <tr><td>Acknowledgement of request</td><td>Within 3 business days</td></tr>
+    <tr><td>Decision on request</td><td>Within 30 days of receipt</td></tr>
+    <tr><td>Extension (if required)</td><td>Additional 30 days with written notice</td></tr>
+  </table>
+  <p>CronKode (Pty) Ltd reserves the right to refuse access to records in circumstances permitted by PAIA, including where disclosure would unreasonably harm the commercial interests of the organisation or the privacy of third parties.</p>
+
+  <h2>8. Request Fees</h2>
+  <table>
+    <tr><th>Fee Type</th><th>Amount</th></tr>
+    <tr><td>Request fee (filing)</td><td>R0 — waived for now</td></tr>
+    <tr><td>Access fee (reproduction)</td><td>As prescribed by PAIA regulations</td></tr>
+    <tr><td>Personal information requests</td><td>No fee charged</td></tr>
+  </table>
+  <p>CronKode (Pty) Ltd currently waives the request filing fee. Reproduction costs may apply for large volumes of records.</p>
+
+  <h2>9. Grounds for Refusal</h2>
+  <p>CronKode (Pty) Ltd may refuse a request for access to records on the following grounds as permitted by PAIA:</p>
+  <ul>
+    <li>The record contains personal information of a third party who has not consented</li>
+    <li>Disclosure would harm the commercial interests of CronKode (Pty) Ltd</li>
+    <li>The record is protected by legal privilege</li>
+    <li>The record contains confidential information supplied by a third party</li>
+    <li>Disclosure would be in breach of a legal obligation of confidentiality</li>
+  </ul>
+
+  <h2>10. Third Party Notification</h2>
+  <p>Where a request concerns records that contain information about a third party, CronKode (Pty) Ltd will notify that third party and provide them with an opportunity to make representations before a decision is made.</p>
+
+  <h2>11. Appeals and Complaints</h2>
+  <p>If a requester is dissatisfied with a decision made by CronKode (Pty) Ltd regarding their PAIA request, they may:</p>
+  <ul>
+    <li>Apply to a court for relief in terms of Section 78 of PAIA</li>
+    <li>Lodge a complaint with the Information Regulator of South Africa</li>
+  </ul>
+  <p>Information Regulator contact details:</p>
+  <ul>
+    <li>Website: <a href="https://www.inforegulator.org.za" target="_blank">inforegulator.org.za</a></li>
+    <li>Email: inforeg@justice.gov.za</li>
+    <li>Complaints email: POPIAComplaints@inforegulator.org.za</li>
+  </ul>
+
+  <h2>12. Data Subject Rights Under POPIA</h2>
+  <p>In addition to PAIA rights, data subjects have the following rights under POPIA regarding their personal information held by CronKode (Pty) Ltd:</p>
+  <ul>
+    <li>Right to access their personal information</li>
+    <li>Right to request correction of inaccurate information</li>
+    <li>Right to request deletion of their personal information</li>
+    <li>Right to object to processing of their personal information</li>
+    <li>Right to lodge a complaint with the Information Regulator</li>
+  </ul>
+  <p>All such requests must be submitted to <a href="mailto:hello@cronkode.co.za">hello@cronkode.co.za</a> and will be responded to within 30 days.</p>
+
+  <h2>13. Updates to This Manual</h2>
+  <p>This PAIA Manual will be reviewed and updated annually or whenever significant changes occur in the organisation's structure, operations or information holdings. The current version will always be available at <a href="https://cronkode.co.za/paia">cronkode.co.za/paia</a>.</p>
+
+  <h2>14. Applicable Legislation</h2>
+  <ul>
+    <li>Promotion of Access to Information Act 2 of 2000 (PAIA)</li>
+    <li>Protection of Personal Information Act 4 of 2013 (POPIA)</li>
+    <li>Constitution of the Republic of South Africa, 1996 — Section 32</li>
+  </ul>
+</main>
+
+<footer>
+  © 2026 CronKode (Pty) Ltd · <a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms of Service</a> · <a href="/paia">PAIA Manual</a>
+</footer>
+
+</body>
+</html>
